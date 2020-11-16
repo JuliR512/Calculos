@@ -27,7 +27,7 @@ if oper == '=':
 
 #Aqui empieza un bucle
 
-while oper == '-' or '+' or '*' or '/' or '+-' or '-+':
+while oper != '=':
     date2 = int(input("ingrese número: "))
     oper2 = str(input("Ingrese '=' o '%': "))
 
