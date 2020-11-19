@@ -21,7 +21,8 @@ if help == 'help':
     print("r =Raíz cuadrada")
     print(" ")
     print("INFORMACION IMPORTANTE:")
-    print("los operadorees de '%', '**' y 'r' solo funcionan con 2 numeros a evaluar")
+    print("los operadorees de '%' y '**' solo funcionan con 2 numeros a evaluar.")
+    print("El operador 'r' solo funciona con un dato")
 
 print(' ')
 
@@ -29,10 +30,16 @@ date1 = int(input("ingrese número: "))
 oper = str(input("ingrese operador o =: "))
 
 if oper == '=':
+    print(" ")
+    print("Su resultado es: ")
+    print(" ")
     print(date1)
 
 if oper =='r':
     date_4=math.sqrt(date1)
+    print(" ")
+    print("Su resultado es: ")
+    print(" ")
     print(date_4)
 
 #Aqui empieza un bucle
@@ -46,6 +53,9 @@ while oper != '=' and oper != 'r':
     while oper2 != '=':
         date3 = int(input("ingrese número: "))
         oper3 = str(input("Ingrese '=' o '%': "))
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
 
     #Suma
         if oper == '+' and oper2 == '+' and oper3 == '=':
@@ -108,7 +118,7 @@ while oper != '=' and oper != 'r':
         elif oper == '+-' or '-+' and oper2 == '/' and oper3 == '=':
             print(date1 + date2 / date3)
             print(date1 - date2 / date3)
-        elif oper == '+-' or '-+' and oper2 == '*' and oper3 == '=':
+        elif oper == '+-' or '-+' and oper2 == '+-' or '-+' and oper3 == '=':
             print(date1 + date2 + date3)
             print(date1 - date2 + date3)
             print(date1 + date2 - date3)
@@ -116,18 +126,39 @@ while oper != '=' and oper != 'r':
         break;
 
     if oper == '+' and oper2 == '=':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
         print(date1 + date2)
     elif oper == '-' and oper2 == '=':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
         print(date1 - date2)
     elif oper == '*' and oper2 == '=':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
         print(date1 * date2)
     elif oper == '/' and oper2 == '=':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
         print(date1 / date2)
     elif oper == '+-' or '-+' and oper2 == '=' and oper != '**':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
         print(date1 + date2)
         print(date1 - date2)
     elif oper == '*' and oper2 == '%':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
         print(date1 * date_Porcent)
     elif oper == '**' and oper2 == '=':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
         print(date1 ** date2)
     break
