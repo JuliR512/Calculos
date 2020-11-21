@@ -35,6 +35,12 @@ if oper == '=':
     print(" ")
     print(date1)
 
+while date1<0 and oper=='r':
+    print(" ")
+    print("Error, no se puede sacar la raiz cuadrada de un numero negativo")
+    print(" ")
+    break
+
 if oper =='r':
     date_4=math.sqrt(date1)
     print(" ")
