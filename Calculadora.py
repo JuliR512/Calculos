@@ -82,8 +82,6 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
     oper2 = str(input("Ingrese operador, '=' o '%': "))
 
     date_Porcent = date2/100
-    mcd=math.gcd(date1, date2)
-    log=math.log(date2, date1)
 
     while oper2 != '=':
         date3 = int(input("ingrese número: "))
@@ -167,11 +165,13 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
         print(date1 + date2)
         
     elif oper == 'mcd' and oper2 == '=':
+        mcd=math.gcd(date1, date2)
         print(" ")
         print("Su resultado es: ")
         print(" ")
         print(mcd)
     elif oper == 'log' and oper2 == '=':
+        log=math.log(date2, date1)
         print(" ")
         print("Su resultado es: ")
         print(" ")
