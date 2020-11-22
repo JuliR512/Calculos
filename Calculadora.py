@@ -17,12 +17,18 @@ if help == 'help':
     print("* = multiplicacion")
     print("/ = division")
     print("primero: *, y despues: % = porcentaje")
-    print("** = exponentes")
+    print("** = potenciacion")
     print("r =Raíz cuadrada")
+    print("mcd = maximo comun divisor")
+    print("log = logaritmacion")
+    print("sin = Seno")
+    print("cos = Coseno")
+    print("tan = Tangente")
     print(" ")
     print("INFORMACION IMPORTANTE:")
     print("los operadorees de '%' y '**' solo funcionan con 2 numeros a evaluar.")
     print("El operador 'r' solo funciona con un dato")
+    print("En el operador 'log' el primer dato es la base")
 
 print(' ')
 
@@ -35,6 +41,27 @@ if oper == '=':
     print(" ")
     print(date1)
 
+if oper == 'sin':
+    sin=math.sin(date1)
+    print(" ")
+    print("Su resultado es: ")
+    print(" ")
+    print(sin)
+
+if oper =='cos':
+    Cos=math.cos(date1)
+    print(" ")
+    print("Su resultado es: ")
+    print(" ")
+    print(Cos)
+
+if oper =='tan':
+    tan=math.tan(date1)
+    print(" ")
+    print("Su resultado es: ")
+    print(" ")
+    print(tan)
+
 while date1<0 and oper=='r':
     print(" ")
     print("Error, no se puede sacar la raiz cuadrada de un numero negativo")
@@ -42,19 +69,21 @@ while date1<0 and oper=='r':
     break
 
 if oper =='r':
-    date_4=math.sqrt(date1)
+    r2=math.sqrt(date1)
     print(" ")
     print("Su resultado es: ")
     print(" ")
-    print(date_4)
+    print(r2)
 
 #Aqui empieza un bucle
 
-while oper != '=' and oper != 'r':
+while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper != 'tan':
     date2 = int(input("ingrese número: "))
     oper2 = str(input("Ingrese operador, '=' o '%': "))
 
     date_Porcent = date2/100
+    mcd=math.gcd(date1, date2)
+    log=math.log(date2, date1)
 
     while oper2 != '=':
         date3 = int(input("ingrese número: "))
@@ -129,13 +158,24 @@ while oper != '=' and oper != 'r':
             print(date1 - date2 + date3)
             print(date1 + date2 - date3)
             print(date1 - date2 - date3)
-        break;
+        break
 
     if oper == '+' and oper2 == '=':
         print(" ")
         print("Su resultado es: ")
         print(" ")
         print(date1 + date2)
+        
+    elif oper == 'mcd' and oper2 == '=':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
+        print(mcd)
+    elif oper == 'log' and oper2 == '=':
+        print(" ")
+        print("Su resultado es: ")
+        print(" ")
+        print(log)
     elif oper == '-' and oper2 == '=':
         print(" ")
         print("Su resultado es: ")
@@ -151,7 +191,7 @@ while oper != '=' and oper != 'r':
         print("Su resultado es: ")
         print(" ")
         print(date1 / date2)
-    elif oper == '+-' or '-+' and oper2 == '=' and oper != '**':
+    elif oper == '+-' or '-+' and oper2 == '=' and oper != '**' and oper == 'mcd':
         print(" ")
         print("Su resultado es: ")
         print(" ")
