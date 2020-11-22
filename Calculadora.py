@@ -85,7 +85,7 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
 
     while oper2 != '=':
         date3 = int(input("ingrese número: "))
-        oper3 = str(input("Ingrese '=' o '%': "))
+        oper3 = str(input("Ingrese '=': "))
         print(" ")
         print("Su resultado es: ")
         print(" ")
