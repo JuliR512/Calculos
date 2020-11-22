@@ -89,7 +89,7 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
             oper2='='
             break
         date3 = int(input("ingrese número: "))
-        oper3 = str(input("Ingrese '=': "))
+        oper3 = str(input("Ingrese operador o '=': "))
 
         while oper2 != '=' and oper3 != '=':
             date4 = int(input("ingrese número: "))
@@ -99,7 +99,7 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
             print("Su resultado es: ")
             print(" ")
 
-            #Suma
+        #Suma
             #Suma y suma
             if oper == '+' and oper2 == '+' and oper3 == '+' and oper4 == '=':
                 print(date1 + date2 + date3 + date4)
@@ -136,7 +136,7 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
                 print(date1 + date2 / date3 * date4)
             elif oper == '+' and oper2 == '/' and oper3 == '/' and oper4 == '=':
                 print(date1 + date2 / date3 / date4)
-            #Resta
+        #Resta
             #Resta y suma
             elif oper == '-' and oper2 == '+' and oper3 == '+' and oper4 == '=':
                 print(date1 - date2 + date3 + date4)
@@ -173,7 +173,7 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
                 print(date1 - date2 / date3 * date4)
             elif oper == '-' and oper2 == '/' and oper3 == '/' and oper4 == '=':
                 print(date1 - date2 / date3 / date4)
-            #Multiplicacion
+        #Multiplicacion
             #Multiplicacion y suma
             elif oper == '*' and oper2 == '+' and oper3 == '+' and oper4 == '=':
                 print(date1 * date2 + date3 + date4)
@@ -210,7 +210,7 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
                 print(date1 * date2 / date3 * date4)
             elif oper == '*' and oper2 == '/' and oper3 == '/' and oper4 == '=':
                 print(date1 * date2 / date3 / date4)
-            #Division
+        #Division
             #Division y suma
             elif oper == '/' and oper2 == '+' and oper3 == '+' and oper4 == '=':
                 print(date1 / date2 + date3 + date4)
