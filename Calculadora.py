@@ -3,11 +3,11 @@
 print(' ')
 print("CALCULADORA DE OPERACIONES BASICAS")
 print(" ")
-help = str(input('ingrese "help" si requiere ayuda: '))
+help = str(input('ingrese "ayuda" si requiere ayuda: '))
 
 #Icono de ayuda
 
-if help == 'help':
+if help == 'ayuda':
     print(' ')
     print("Comandos:")
     print(' ')
@@ -84,7 +84,7 @@ while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper !
     date_Porcent = date2/100
 
     while oper2 != '=':
-        if oper=='+-':
+        if oper=='+-' and oper=='-+':
             print("Error, no se permite usar el operador '+-' o '-+' con la intencion de mas de 2 datos")
             oper2='='
             break
