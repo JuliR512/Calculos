@@ -27,8 +27,8 @@ if help == 'ayuda':
     print(" ")
     print("INFORMACION IMPORTANTE:")
     print("los operadores de '+-', '-+', '%' y '**' solo funcionan con 2 numeros a evaluar.")
-    print("El operador 'r' solo funciona con un dato")
-    print("En el operador 'log' el primer dato es la base")
+    print("El operador 'r' solo funciona con un dato.")
+    print("En el operador 'log' el primer dato es la base.")
 
 print(' ')
 
