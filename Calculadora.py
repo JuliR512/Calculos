@@ -35,7 +35,7 @@ def calculadora():
 
         print(' ')
 
-        date1 = int(input("ingrese número: "))
+        date1 = float(input("ingrese número: "))
         oper = str(input("ingrese operador o =: "))
 
         if oper == '=':
@@ -81,7 +81,7 @@ def calculadora():
         #Aqui empieza un bucle
 
         while oper != '=' and oper != 'r' and oper != 'sin' and oper != 'cos' and oper != 'tan':
-            date2 = int(input("ingrese número: "))
+            date2 = float(input("ingrese número: "))
             oper2 = str(input("Ingrese operador, '=' o '%': "))
 
             date_Porcent = date2/100
@@ -91,11 +91,11 @@ def calculadora():
                     print("Error, no se permite usar el operador '+-' o '-+' con la intencion de mas de 2 datos")
                     oper2='='
                     break
-                date3 = int(input("ingrese número: "))
+                date3 = float(input("ingrese número: "))
                 oper3 = str(input("Ingrese operador o '=': "))
 
                 while oper2 != '=' and oper3 != '=':
-                    date4 = int(input("ingrese número: "))
+                    date4 = float(input("ingrese número: "))
                     oper4 = str(input("Ingrese '=': "))
             
                     print(" ")
